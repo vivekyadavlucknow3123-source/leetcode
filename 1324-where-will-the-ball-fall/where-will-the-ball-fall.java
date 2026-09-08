@@ -4,7 +4,6 @@ class Solution {
         int n = grid[0].length;
         int[] result = new int[n];
 
-        
         for (int c = 0; c < n; c++) {
             int col = c;
 
@@ -12,7 +11,7 @@ class Solution {
                 int dir = grid[row][col];
                 int nextCol = col + dir;
 
-                
+            
                 if (nextCol < 0 || nextCol >= n || grid[row][nextCol] != dir) {
                     col = -1;
                     break;
